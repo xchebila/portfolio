@@ -1,0 +1,196 @@
+/******* GENERAL *******/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Bogart';
+  src: url('../rss/fonts/Bogart-Regular.TTF');
+}
+
+@font-face {
+  font-family: 'Room';
+  src: url('../rss/fonts/Room-Thin.ttf');
+}
+
+body {
+  margin: auto;
+  padding: auto;
+}
+
+
+/******** HOME *******/
+.home {
+  display: flex;
+  height: 100vh;
+  letter-spacing: 2px;
+  background-color: #f1f1f1;
+}
+
+.left {
+  flex: 0 0 60%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative; /* Ajoutez cette ligne */
+}
+
+.right {
+  flex: 0 0 40%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portfolio {
+  font-family: 'Room', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.xiam,
+.chebila {
+  font-family: 'Bogart', sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 10px;
+}
+
+.chebila {
+  margin-bottom: 200px;
+}
+
+.dev,
+.email {
+  font-family: 'Room', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.dev {
+  margin-right: 80px;
+}
+
+.email a,
+.dev a {
+  color: #000;
+  text-decoration: none;
+}
+
+.email a:hover,
+.dev a:hover {
+  text-decoration: underline;
+}
+
+.right img {
+    width: auto;
+    height: auto;
+}
+
+.icons {
+  display: flex;
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  align-items: center;
+  margin-top: 100px;
+}
+
+.icons a {
+  font-size: 40px;
+  color: #000;
+  margin: 0 10px; /* Espacement horizontal entre les logos */
+}
+
+.icons a:hover {
+  color: #0077B5; /* Couleur bleue LinkedIn */
+}
+
+
+/******* PROJETS *******/
+.projets {
+  display: flex;
+  height: 100%;
+}
+
+.projets .left {
+  flex: 0 0 40%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projets .left .section-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.projets .left img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.projets .right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projets .right > div {
+  margin: 20px;
+  text-align: center;
+}
+
+.projets .right p {
+  margin-top: 10px;
+  font-family: 'Room', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.projets .right a {
+  margin-bottom: 10px;
+}
+
+.projets .right img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: 'Room', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+
+/******* FICTIONAL & ROCKET *******/
+
+#fictional img,
+#rocket img {
+  width: 200px;
+  height: auto;
+}
+
+
+
+
+
+
+
+

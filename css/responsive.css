@@ -1,0 +1,99 @@
+/* Media queries pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column; /* Affichage vertical des éléments de la section "Home" */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: center; /* Centrer les éléments verticalement */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    background-color: #f1f1f1; /* Arrière-plan gris */
+  }
+
+  .left {
+    width: 100%; /* Prendre toute la largeur disponible */
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .right {
+    display: none; /* Masquer l'image de droite */
+  }
+
+  .projets {
+    flex-direction: column;
+  }
+
+  .projets .left,
+  .projets .right {
+    padding: 20px;
+  }
+  
+  .projets .right {
+    flex-direction: column; /* Affichage vertical des projets */
+    align-items: center; /* Centrer les projets horizontalement */
+  }
+
+  .projets .right > div {
+    margin: 10px 0; /* Espacement vertical entre les projets */
+  }
+  
+  .projets .left .section-title,
+  .projets .left img,
+  .name-section,
+  .dev,
+  .email {
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  
+   .projets .left img {
+    display: none; /* Cacher l'image "projet2.jpg" */
+  }
+
+  .name-section {
+    margin-bottom: 20px; /* Espacement sous le nom */
+  }
+
+  .chebila {
+    font-size: 100px; /* Réduire la taille de la police */
+  }
+
+  .dev,
+  .email {
+    margin-right: 0; /* Supprimer la marge droite */
+    margin-bottom: 20px; /* Espacement sous le texte */
+  }
+  
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .left,
+  .contact .right {
+    margin-top: 20px;
+  }
+
+  .icons {
+    margin-top: 20px;
+  }
+
+  .icons a {
+    margin: 0 5px;
+  }
+
+  .projets .right > div {
+    margin: 10px;
+  }
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 576px) {
+  .left,
+  .right {
+    padding: 10px;
+  }
+
+  .projets .right > div {
+    margin: 5px;
+  }
+}
