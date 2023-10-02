@@ -1,22 +1,22 @@
 /* Media queries pour les écrans de taille moyenne */
 @media (max-width: 768px) {
   .home {
-    flex-direction: column; /* Affichage vertical des éléments de la section "Home" */
-    align-items: center; /* Centrer les éléments horizontalement */
-    justify-content: center; /* Centrer les éléments verticalement */
-    height: auto; /* Ajuster la hauteur automatiquement */
-    background-color: #f1f1f1; /* Arrière-plan gris */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: auto; 
+    background-color: #f1f1f1; 
   }
 
   .left {
-    width: 100%; /* Prendre toute la largeur disponible */
+    width: 100%; 
     padding: 40px;
     box-sizing: border-box;
     text-align: center;
   }
 
   .right {
-    display: none; /* Masquer l'image de droite */
+    display: none; 
   }
 
   .projets {
@@ -29,12 +29,12 @@
   }
   
   .projets .right {
-    flex-direction: column; /* Affichage vertical des projets */
-    align-items: center; /* Centrer les projets horizontalement */
+    flex-direction: column;
+    align-items: center; 
   }
 
   .projets .right > div {
-    margin: 10px 0; /* Espacement vertical entre les projets */
+    margin: 10px 0; 
   }
   
   .projets .left .section-title,
@@ -42,25 +42,25 @@
   .name-section,
   .dev,
   .email {
-    text-align: center; /* Centrer le contenu horizontalement */
+    text-align: center; 
   }
   
    .projets .left img {
-    display: none; /* Cacher l'image "projet2.jpg" */
+    display: none; 
   }
 
   .name-section {
-    margin-bottom: 20px; /* Espacement sous le nom */
+    margin-bottom: 20px; 
   }
 
   .chebila {
-    font-size: 100px; /* Réduire la taille de la police */
+    font-size: 100px; 
   }
 
   .dev,
   .email {
-    margin-right: 0; /* Supprimer la marge droite */
-    margin-bottom: 20px; /* Espacement sous le texte */
+    margin-right: 0; 
+    margin-bottom: 20px; 
   }
   
   .contact {
@@ -85,6 +85,16 @@
     margin: 10px;
   }
 }
+
+.name-section a:hover .xiam::before,
+  .name-section a:hover .chebila::before {
+    font-size: 100px; 
+    text-align: center; 
+    position: static; 
+    transform: none; 
+    display: block; 
+    margin-top: 10px; 
+  }
 
 /* Media queries pour les petits écrans */
 @media (max-width: 576px) {

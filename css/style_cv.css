@@ -1,0 +1,66 @@
+.profile-image {
+    background-image: url('../rss/img/xiam.png'); /* Remplacez 'votre-photo.jpg' par le chemin de votre photo */
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Couleur de fond du bandeau */
+    color: #fff; /* Couleur du texte du bandeau */
+}
+
+.header-right {
+    text-align: right;
+}
+
+img {
+    max-width: 100px;
+}
+
+/* Ajout de fond blanc à la partie gauche */
+.left-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: -15px; /* Aligner le haut du bandeau blanc avec le bandeau horizontal */
+    margin-left : -15px;
+}
+
+/* Style des catégories */
+.category-title {
+    color: #3498db; /* Couleur du titre des catégories */
+    font-size: 1.5rem; /* Taille de police du titre des catégories */
+    margin-bottom: 10px; /* Espace en bas des titres des catégories */
+}
+
+/* Style des listes */
+.custom-list {
+    list-style-type: disc; /* Ajout des puces */
+    padding-left: 20px; /* Espacement des puces */
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

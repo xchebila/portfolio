@@ -17,6 +17,7 @@ body {
 }
 
 
+
 /******** HOME *******/
 .home {
   display: flex;
@@ -24,6 +25,7 @@ body {
   letter-spacing: 2px;
   background-color: #f1f1f1;
 }
+
 
 .left {
   flex: 0 0 60%;
@@ -59,6 +61,7 @@ body {
   font-size: 120px;
   font-weight: 700;
   line-height: 10px;
+  transition: color 1s ease; 
 }
 
 .chebila {
@@ -152,6 +155,7 @@ body {
 .projets .right > div {
   margin: 20px;
   text-align: center;
+  flex: 1; 
 }
 
 .projets .right p {
@@ -179,10 +183,11 @@ body {
 }
 
 
-/******* FICTIONAL & ROCKET *******/
+/******* FICTIONAL & ROCKET & DRAGON *******/
 
 #fictional img,
-#rocket img {
+#rocket img,
+#dragon img  {
   width: 200px;
   height: auto;
 }
@@ -190,7 +195,38 @@ body {
 
 
 
+/***** LINK ****/
+.name-section a {
+  color: #000; 
+  text-decoration: none; 
+}
 
+.name-section a:hover {
+  color: #0077B5; 
+  transition: color 1s ease; /* Transition pour la couleur au survol */
+  text-decoration: none; 
+}
 
+.name-section a:hover .xiam {
+  color: transparent; 
+}
 
+.name-section a:hover .xiam::before {
+  content: "Mon CV"; 
+  color: #0077B5; 
+  position: absolute; 
+  left: 50%; /* Déplacez le texte vers le centre horizontal */
+  transform: translateX(-50%); /* Centrez le texte horizontalement */
+}
 
+.name-section a:hover .chebila {
+  color: transparent; 
+}
+
+.name-section a:hover .chebila:before {
+  content: "ici"; 
+  color: #0077B5; 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%)
+}
